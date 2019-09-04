@@ -54,7 +54,7 @@ Takes an object parsed from JSON and outputs CSV string.
 
 Takes a CSV string and outputs an object ready for stringifying to JSON.
 
-### separator: string = '┊'
+### separator: string = ';'
 
 The separator used for separating key levels in CSV.
 
