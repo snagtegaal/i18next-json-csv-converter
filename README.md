@@ -5,14 +5,9 @@ Converts i18next format JSON files to CSV (to be imported to Excel) and back.
 ## Install
 
 ```sh
-$ npm i -g i18next-json-csv-converter
+$ npm i -g i18next-json-csv-converter-separator
 ```
 
-Or with Yarn:
-
-```sh
-$ yarn global add i18next-json-csv-converter
-```
 
 ## CLI
 
