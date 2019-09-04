@@ -4,7 +4,7 @@
 	"main": "index.js",
 	"bin": "index.js",
 	"repository": "https://github.com/snagtegaal/i18next-json-csv-converter.git",
-	"author": "andraaspar",
+	"author": "snagtegaal",
 	"license": "MIT",
 	"devDependencies": {
 		"ava": "^0.25.0"
