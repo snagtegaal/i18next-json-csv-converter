@@ -73,3 +73,7 @@ MIT
 0.1.1 Added license.
 
 0.2.0 diffCsv.
+
+0.3.0 changed separator.
+
+0.3.1 updated content
