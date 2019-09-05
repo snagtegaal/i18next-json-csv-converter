@@ -49,7 +49,7 @@ Takes an object parsed from JSON and outputs CSV string.
 
 Takes a CSV string and outputs an object ready for stringifying to JSON.
 
-### separator: string = ';'
+### separator: string = '.'
 
 The separator used for separating key levels in CSV.
 
@@ -77,3 +77,5 @@ MIT
 0.3.0 changed separator.
 
 0.3.1 updated content
+
+0.3.2 changed separator, handling of Objects / Arrays

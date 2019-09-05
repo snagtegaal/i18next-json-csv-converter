@@ -1,5 +1,5 @@
-const test = require('ava')
-const { json2Csv, csv2Json, separator, diffCsv } = require('./index.js')
+const test = require('ava');
+const { json2Csv, csv2Json, separator, diffCsv } = require('./index.js');
 
 test('json2Csv: Works.', t => {
 	const json = {

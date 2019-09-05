@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const separator = ';'
+const separator = '.'
 
 if (require.main === module) {
 	main()
@@ -54,7 +54,12 @@ function csv2Json(csv) {
 function findKeyValues(o, prefix, l = 0) {
 	let result = []
 	for (const key of Object.keys(o)) {
-		const fullKey = prefix ? prefix + separator + key : key
+		let fullKey = null
+		if(key >= 0) {
+			fullKey = prefix ? prefix : key
+		} else {
+			fullKey = prefix ? prefix + separator + key : key
+		}
 		const value = o[key]
 		if (typeof value === 'string') {
 			result.push(stringsToCsvLine([fullKey, value]))
@@ -77,7 +82,19 @@ function deepSet(o, path, value) {
 		}
 		deepSet(o[key], path.slice(1), value)
 	} else {
-		o[path[0]] = value
+		if(o[path[0]]) {
+			let newValue = null
+			if (typeof o[path] === "string") {
+				newValue = []
+				newValue.push(o[path])
+			} else {
+				newValue = o[path]
+			}
+			newValue.push(value)
+			o[path] = newValue
+		} else {
+			o[path[0]] = value
+		}
 	}
 }
 

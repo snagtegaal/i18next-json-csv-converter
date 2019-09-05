@@ -2,6 +2,9 @@
   "test": {
     "title": "test title",
     "content": "we like testing",
+    "nested": {
+      "nested_content": "Nice nest"
+    },
     "list": [
       "list item 1",
       "list item 2",

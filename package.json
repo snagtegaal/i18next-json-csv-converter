@@ -1,6 +1,6 @@
 {
 	"name": "i18next-json-csv-converter-separator",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"main": "index.js",
 	"bin": "index.js",
 	"repository": "https://github.com/snagtegaal/i18next-json-csv-converter.git",
